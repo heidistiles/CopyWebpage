@@ -1,0 +1,350 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+
+html {
+    font-size: 8px;
+    --pink: rgb(215 194 212);
+    --lightpink: rgb(235 224 233);
+    --gray: rgb(220, 216, 216);
+    --darkgray: rgb(110, 108, 108);
+    color: white;
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: var(--gray);
+}
+
+@font-face  {
+    font-family: "Poppins";
+    src: url("Poppins/Poppins-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face  {
+    font-family: "Poppins";
+    src: url("Poppins/Poppins-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face  {
+    font-family: "Poppins";
+    src: url("Poppins/Poppins-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face  {
+    font-family: "Poppins";
+    src: url("Poppins/Poppins-ExtraLight.ttf");
+    font-weight: 200;
+    font-style: normal;
+}
+
+.white {
+    color: white;
+}
+
+.darkgray {
+    color: var(--darkgray);
+}
+
+.pink {
+    background-color: var(--pink);
+}
+
+.boxshadow {
+    box-shadow: 0 10px 5px 0 rgba(110, 108, 108, 0.5);
+}
+
+.center {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 7.5rem;
+    font-weight: 700;
+    line-height: 9rem;
+}
+
+h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 7.5rem;
+}
+
+h3 {
+    font-size: 3.5rem;
+    line-height: 4.25rem;
+}
+
+p, a {
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    border: 1px solid #ffffff;
+    padding: 1.25rem 2.5rem;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--darkgray);
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.quad {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quad > div {
+    width: 50%;
+    height: 100vh;
+}
+
+.quad1 {
+    padding: 3rem 3rem 3rem 15.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quad1 p {
+    color: var(--lightpink);
+}
+
+.quad1 div:nth-child(2) h2:nth-child(2){
+    margin-bottom: 1rem;
+}
+
+.quad1 div:nth-child(2) p:nth-child(4) {
+    margin-bottom: 5rem;
+}
+
+.quad1 div .button {
+    margin-right: 0.75rem;
+}
+
+.quad1 div div .button {
+    margin-right: 2.5rem;
+
+}
+
+.omg {
+    display: flex;
+}
+
+.wtf {
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    line-height: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wtf a:hover {
+    text-decoration: none;
+}
+
+.quad1 svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+.quad2 {
+    background-image: url("aiony-haust-f2ar0ltTvaI-unsplash-scaled-e1650858157777-768x858.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 2.5rem;
+    gap: 5rem;
+}
+
+.quad3 {
+    padding: 7.5% 7.5% 7.5% 8.35%;
+}
+
+.quad3 div {
+    width: 100%;
+    height: 100%;
+    background-image: url("aiony-haust-f2ar0ltTvaI-unsplash-scaled-e1650858157777-768x858.jpg");
+}
+
+.quad4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 8rem 8rem 10rem;
+}
+
+.quad4 h2 {
+    margin-bottom: 5rem;
+}
+
+.quad4 p{
+    font-weight: 600;
+}
+
+.quad4 svg {
+    margin: 0 0 1.5rem -6.25rem;
+    width: 6.25rem;
+    height: 5.5rem;
+}
+
+.simple {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 7.5%;
+    margin: 12.5rem 0 2.5rem 0;
+}
+
+.simple p {
+    width: 55%;
+}
+
+.cards {
+    display: flex;
+    padding: 0 7.5%;
+    gap: 2.5rem;
+}
+
+.cards div {
+    padding: 12.5rem 10rem 7.5rem 10rem;
+}
+
+.cards svg {
+    width: 8.25rem;
+    height: 8.25rem;
+    color: white;
+    border: 2px solid white;
+    padding: 1rem;
+    margin-bottom: 5.25rem;
+}
+
+.cards h3 {
+    margin-bottom: 1.25rem;
+}
+
+.cards p:nth-child(3) {
+    margin-bottom: 12.5rem;
+}
+
+.card2 {
+    border: 3px solid white;
+}
+
+.card2 svg {
+    color: var(--pink);
+    background-color: white;
+}
+
+.platformfull {
+    display: flex;
+    justify-content: center;
+    gap: 18.75rem;
+    padding: 18.75rem;
+}
+
+.platformfull svg {
+    height: 3.75rem;
+    min-width: 15rem;
+    color: var(--darkgray);
+}
+
+.interest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15%;
+    padding: 12.5rem 0 6rem
+}
+
+.interest h1 {
+    width: 60%;
+}
+
+.interest > div {
+    padding:1.25rem 0 5rem 0;
+    width: 55%;
+}
+
+.interest p {
+    line-height: 3rem;
+}
+
+.interest .button {
+    padding: 0.5rem 2.5rem;
+}
+
+.platformicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 8.5rem 0 12.5rem 0;
+}
+
+.round {
+    border-radius: 50%;
+    background-color: var(--darkgray);
+    width: 5.5rem;
+    height: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.platformicons .linkedin {
+    color: var(--darkgray);
+    background-color: white;
+    border-radius: 50%;
+}
+
+.reserved {
+    margin: 0 0 12.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    font-weight: 700;
+}
